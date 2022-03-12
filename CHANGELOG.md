@@ -1,4 +1,11 @@
 
+# Changelog 
+
+All notable changes to this project will be documented in this file.
+ https://semver.org/spec/v2.0.0.html
+ https://keepachangelog.com/en/1.0.0/
+
+The format is based on Keep a Changelog, and this project adheres
 Added the ability for hosting applicaiton to do account lookup once the wallet returns the keys.
 
 The wallet.discover method currently takes a discoveryOptions parameter - wallet.discover( discoveryOptions )
