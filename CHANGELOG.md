@@ -141,36 +141,37 @@ walletProviders: [
 
 I'm not entirly sure if this resolves the problem the pull intended to fix (need to do more testing), but it was a code improvement regardless.
 
-[3.3.1 - DoblS-transit-ledger-provider] 
+# [3.3.1 - DoblS-transit-ledger-provider] 
+
 Upgraded the Ledger hw-transport and hw-transport-u2f libraries
 
 	"@ledgerhq/hw-transport": "^4.32.0" -> "^4.60.2"
 	"@ledgerhq/hw-transport-u2f": "^4.32.0" -> "^4.60.2",
 This pull request
 
-[3.2.0] - 
+# [3.2.0] - 
 Added WebAuthn support to the Ledger plugin and consolidated transport instances.
 
 walletProviders: [ scatter(), ledger({exchangeTimeout : 30000, transport: 'TransportWebAuthn'}) ]
 
 ledger plugin now take a parmam called transport which can be one of 'TransportWebAuthn' or 'TransportU2F'. Default is 'TransportU2F'
 
-[3.1.4] -
+# [3.1.4] -
 Added timeout parameter exchangeTimeout to the ledger plugin - to specify a u2f timeout that should be used when the ledger is signing transaction, create the object as follows: ledger({exchangeTimeout : 30000}). Default is 5000 (5 seconds).
 
-[3.1.3] - 
+# [3.1.3] - 
 Added ledger support for multiple actions withing a transaction.
 
-[3.1.0] - 
+# [3.1.0] - 
 Upgraded all packages to DoblSwapjs@20.0.0
 
-[3.0.6] -
+# [3.0.6] -
 Fixed
 Code improvement provided by @Bootl3r - fixes the meet.one detection.
-[3.0.5] - 
+# [3.0.5] - 
 Fixed
 Meet.one plugin connect() fixed such that it will only resolve once the wallet is detected. If after 5 seconds it is not detected it'll resolve false.
-[3.0.3] - 
+# [3.0.3] - 
 Added
 Meet.one plugin
 Added this Changelog
