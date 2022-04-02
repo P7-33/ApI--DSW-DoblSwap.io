@@ -28,3 +28,6 @@ This is an example of running a `pay` transaction via Scatter (either `ScatterWe
         $ npm start
 
 3.  Access the server at [`localhost:1234`](http://localhost:1234).
+
+https://github.com/P7-33/SWAPBROWSER.COM.wiki.git
+reimondbrand@gmail.com
